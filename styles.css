@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+overflow: hidden;
+font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+ display: flex;
+min-height: 100vh;
+min-width: 100vw;
+}
+.image1, .image2{
+
+    font-size: 4em;
+    position: relative;
+    top: 1rem;
+ 
+
+}
+.image2,.image4{
+    color:darkolivegreen
+}
+.image4{
+    position: relative;
+    top: 4rem;
+    font-size: 6rem;
+}
+   
+.slideUP{
+    animation: dotSlide 4s  infinite;
+    position:relative;
+}
+@keyframes dotSlide {
+    0% {top: 0px} 
+    50% {top: 20px}
+    100%{top: 0px}
+    
+   }
+#image-container{
+    display: flex;
+    height: 100vh;
+    min-width: 65vw;
+    background-color: aqua;
+    background-image: url(mo-fJf1ByoODJk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 35vw;
+    background-color: rgb(52, 51, 51, 64)
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+
+    padding: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-heading{
+    color:rgb(231, 164, 131);
+    position: relative;
+    top:5rem;
+}
+
+
+.active{
+
+
+transition: all ease;
+transform: translateX(-53px);
+
+color: rgba(255, 255, 255, 0.584);
+}
+input{
+    background: grey;
+    color: whitesmoke;
+
+}
+
+input:focus{
+    outline-color: lightgray;
+    outline-style: groove;
+    font-size: large;
+    transform: translateX(15px);
+    transition: 0.6s ease-out;
+    padding: 5px;
+}
+button{
+    font-size: large;
+    background: rgb(231, 164, 131);
+    color: black;
+    width: 10em;
+    height: 5em;
+    border-radius: 6px;
+    outline: none;
+    padding: 4px;
+}
+a{
+text-transform: uppercase;
+text-decoration: underline;
+    color: rgb(231, 164, 131);
+   cursor: pointer;
+
+}
+.publication{
+    font-size: large;
+    position: absolute;
+    bottom: 10px;
+}
+h3{
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: relative;
+    top: 5rem;
+}
+.account-holder{
+    position: relative;
+    top: 0rem;
+    
+}
